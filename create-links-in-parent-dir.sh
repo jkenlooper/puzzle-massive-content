@@ -70,3 +70,12 @@ for f in ../../${PMC}/templates/*; do
   ln --symbolic --force --verbose $f
 done
 )
+
+(
+cd ${PATH_TO_PM_PROJECT}source-media/bit-icons;
+echo "
+Creating symbolic links in $PWD"
+for f in ../../${PMC}/bit-icons/*; do
+  ln --symbolic --force --verbose $f
+done
+)
