@@ -36,6 +36,7 @@ icon for each line in the [full-emoji-list.txt](full-emoji-list.txt) file.
 
 ```bash
 ./create-text-bit-icons-from-list.sh full-emoji-list.txt emoji
+./create-text-bit-icons-from-list.sh text-list.txt text
 ```
 
 Bit icons created from running the above command are set to be ignored by git
