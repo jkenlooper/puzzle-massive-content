@@ -32,10 +32,21 @@ Text bit icons can be created by using the `text-icon.sh` script.  The
 has only been tested with a Ubuntu 20 distribution.  It is common to use this
 script when creating an emoji bit icon.  The
 `create-text-bit-icons-from-list.sh` script can be used to create an emoji bit
-icon for each line in the [full-emoji-list.txt](full-emoji-list.txt) file.
+icon for each line in the [emoji_list text files](emoji_list).
 
 ```bash
-./create-text-bit-icons-from-list.sh full-emoji-list.txt emoji
+./create-text-bit-icons-from-list.sh emoji_list/activities.txt emoji_activities
+./create-text-bit-icons-from-list.sh emoji_list/animals_nature.txt emoji_animals_nature
+./create-text-bit-icons-from-list.sh emoji_list/flags.txt emoji_flags
+./create-text-bit-icons-from-list.sh emoji_list/food_drink.txt emoji_food_drink
+./create-text-bit-icons-from-list.sh emoji_list/objects.txt emoji_objects
+./create-text-bit-icons-from-list.sh emoji_list/people_body.txt emoji_people_body
+./create-text-bit-icons-from-list.sh emoji_list/sky_weather.txt emoji_sky_weather
+./create-text-bit-icons-from-list.sh emoji_list/smileys_emotion.txt emoji_smileys_emotion
+./create-text-bit-icons-from-list.sh emoji_list/symbols.txt emoji_symbols
+./create-text-bit-icons-from-list.sh emoji_list/time.txt emoji_time
+./create-text-bit-icons-from-list.sh emoji_list/travel_places.txt emoji_travel_places
+
 ./create-text-bit-icons-from-list.sh text-list.txt text
 ```
 
