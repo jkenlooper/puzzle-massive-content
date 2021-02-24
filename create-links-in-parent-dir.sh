@@ -2,6 +2,7 @@
 
 set -o pipefail
 set -o errexit
+set -x
 
 function usage {
   cat <<USAGE
@@ -34,6 +35,20 @@ PATH_TO_PM_PROJECT=../
 
 # puzzle-massive-content
 PMC=$(basename $PWD)
+
+# Create text bit icons
+./create-text-bit-icons-from-list.sh emoji_list/activities.txt emoji_activities
+./create-text-bit-icons-from-list.sh emoji_list/animals_nature.txt emoji_animals_nature
+./create-text-bit-icons-from-list.sh emoji_list/flags.txt emoji_flags
+./create-text-bit-icons-from-list.sh emoji_list/food_drink.txt emoji_food_drink
+./create-text-bit-icons-from-list.sh emoji_list/objects.txt emoji_objects
+./create-text-bit-icons-from-list.sh emoji_list/people_body.txt emoji_people_body
+./create-text-bit-icons-from-list.sh emoji_list/sky_weather.txt emoji_sky_weather
+./create-text-bit-icons-from-list.sh emoji_list/smileys_emotion.txt emoji_smileys_emotion
+./create-text-bit-icons-from-list.sh emoji_list/symbols.txt emoji_symbols
+./create-text-bit-icons-from-list.sh emoji_list/time.txt emoji_time
+./create-text-bit-icons-from-list.sh emoji_list/travel_places.txt emoji_travel_places
+./create-text-bit-icons-from-list.sh text-list.txt text
 
 (
 cd ${PATH_TO_PM_PROJECT}chill-data;
