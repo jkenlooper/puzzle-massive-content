@@ -31,9 +31,8 @@ directory.  The naming convention of bit icons is `GROUP-NAME_OF_ICON.png` where
 'GROUP' should be lowercase name for the group this bit icon belongs to and
 'NAME_OF_ICON' is also lowercase.  A text file named after the 'GROUP' should
 also be added to the directory for setting the link and description to use for
-those icons. That file should have a name like `source-GROUP.txt` and be in the
-bit-icons directory. The first line is the link and the second line is for the
-name or description.
+those icons. That file should have a name like `source-GROUP.yaml` and be in the
+bit-icons directory. See the other source-*.yaml files for an example.
 
 Text bit icons can be created by using the `text-icon.sh` script.  The
 `text-icon.sh` script requires imagemagick to be installed on your system and
