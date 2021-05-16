@@ -68,7 +68,7 @@ name: header_cta
 route: /internal/header-cta/
 template: header-cta.html.jinja2
 value:
-  content: other/header-cta-buy-stuff.html
+  content: other/ee-disclaimer.html
 
 --- !ChillNode
 name: extra_menu_items
@@ -77,10 +77,10 @@ template: extra-menu-items.html.jinja2
 value:
   menu_items:
     -
-      link: '/d/buy-stuff/'
-      label: 'Shop'
+      link: '/d/contribute/'
+      label: 'Contribute'
       label_aux: ''
-      icon: 'hamburger'
+      icon: ''
     -
       link: '/d/help/'
       label: 'Help'
@@ -95,21 +95,27 @@ value:
   content: ''
 
 --- !ChillNode
-name: buystuffpage
-route: /buy-stuff/
+name: footer_social_links
+route: /internal/footer-social-links/
+template: other/footer-social-links.html.jinja2
+value:
+  content: ''
+
+--- !ChillNode
+name: contributepage
+route: /contribute/
 template: docs.html.jinja2
 value:
-  canonical_path: /d/buy-stuff/
+  canonical_path: /d/contribute/
   pageimagemedia: puzzle-massive-logo-primary-on-white--1200x630.jpg
   pageimagemedia_width: 1200
   pageimagemedia_height: 630
-  content: other/buystuffpage-content.html
+  content: other/contribute-content.html
   page:
     description: >
-      Online store for Puzzle Massive where players can buy puzzle instances.
-      Other items available to sell from sponsors of Puzzle Massive are hand-made
-      pottery and watercolor paintings from some awesome artists.
-  title: Buy Stuff, Be Awesome
+      Puzzle Massive is supported by donations and contributions from very
+      wonderful people.
+  title: Contribute
   order: '15'
-  slug: buy-stuff
+  slug: contribute
   secondarymenu_template: other/docs-secondarymenu.html.jinja2

@@ -77,6 +77,16 @@ done
 )
 
 (
+mkdir -p ${PATH_TO_PM_PROJECT}media/other;
+cd ${PATH_TO_PM_PROJECT}media/other;
+echo "
+Creating symbolic links in $PWD"
+for f in ${PMC}/media/*; do
+  ln --symbolic --force --verbose $f
+done
+)
+
+(
 mkdir -p ${PATH_TO_PM_PROJECT}source-media/bit-icons;
 cd ${PATH_TO_PM_PROJECT}source-media/bit-icons;
 echo "
