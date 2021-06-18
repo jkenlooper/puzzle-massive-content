@@ -71,6 +71,13 @@ value:
   content: other/ee-disclaimer.html
 
 --- !ChillNode
+name: referral
+route: /internal/referral/
+template: internal-content-embed-with-shortcodes.html.jinja2
+value:
+  content: other/digitalocean-referral.html
+
+--- !ChillNode
 name: extra_menu_items
 route: /internal/extra-menu-items/
 template: extra-menu-items.html.jinja2
